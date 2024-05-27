@@ -5,3 +5,12 @@ color: "Розовый"
 number: "П1119977"
 Выведите на экран значение атрибута color, используя словарь __dict__ класса Саг.
 '''
+
+
+class Car:
+    model = "Тойота"
+    color = "Розовый"
+    number = "П1119977"
+
+print(Car.__dict__['color'])
+print(Car.color)
