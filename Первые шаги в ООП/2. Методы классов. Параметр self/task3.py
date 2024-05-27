@@ -22,11 +22,31 @@ data, result = sr.readlines()
 и соответствующими значениями из Ist_values.
 Если создание локальных свойств проходит успешно, то метод create() возвращает True, иначе - False. 
 Если число полей и число строк не совпадает, то метод create() возвращает False и локальные атрибуты создавать не нужно.
-Р.Ѕ. В программе нужно дополнительно объявить только класс StreamData. Больше ничего делать не нужно.
-
-Пример входной информации 
-    (Sample Input):
-    10
-    (Sample Output):
-    512
 '''
+
+import sys
+
+class StreamData:
+    def create(self, fields, lst_values):
+        if len(fields) != len(lst_values):
+            return False
+        for i, field in enumerate(fields):
+            setattr(self, field, lst_values[i])
+        return True
+
+class StreamReader:
+    FIELDS = ('d', 'title', 'pages')
+    def readlines(self):
+        lst_in = list(map(str.strip, sys.stdin.readlines()))  # считывание списка строк из входного потока
+        sd = StreamData()
+        res = sd.create(self.FIELDS, lst_in)
+        return sd, res
+
+sr = StreamReader()
+data, result = sr.readlines()
+
+print("Создан объект StreamData:", result)
+if result:
+    print("d:", data.d)
+    print("title:", data.title)
+    print("pages:", data.pages)
