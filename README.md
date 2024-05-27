@@ -36,11 +36,12 @@
 
 ### Дополнительные материалы
 
-* Документация Python: https://docs.python.org/3/
-* Курсы по ООП:
-  * https://stepik.org/course/116336/promo
-  * https://proproprogs.ru/python_oop
-  * https://www.youtube.com/playlist?list=PLA0M1Bcd0w8zPwP7t-FgwONhZOHt9rz9E
+* Документация Python
+  * https://docs.python.org/3/
+* Курс по ООП Сергея Балакерева:
+      * https://stepik.org/course/116336/promo
+      * https://proproprogs.ru/python_oop
+      * https://www.youtube.com/playlist?list=PLA0M1Bcd0w8zPwP7t-FgwONhZOHt9rz9E
 * Книги по ООП:
   * https://www.chitai-gorod.ru/product/obektno-orientirovannyy-python-3033619
   * https://www.chitai-gorod.ru/product/obektno-orientirovannoe-programmirovanie-s-pomoshchyu-python-8023042
