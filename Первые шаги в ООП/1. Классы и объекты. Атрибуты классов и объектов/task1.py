@@ -14,4 +14,3 @@ class DataBase:
     author = "Сергей Балакирев" 
     views = 14356
     comments = 12
-
